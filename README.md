@@ -4,7 +4,7 @@
 
   1. Consider the following function (with *less* and *exch* as known from class)
   
-    ~~~{.java}
+~~~java
     private static void mysterySort( Comparable[] arr) {
         boolean swapped = true;
         while (swapped) {
@@ -17,10 +17,11 @@
             }
         }
     }
-   ~~~
+~~~
    
    What is the computational complexity of *mysterySort* for an array of length N for the best,
    average, and worst case?
+   
      
 ## Sorting
 
@@ -30,7 +31,7 @@
      and what the time complexity is
   2. Fill in the missing code from the following quicksort function:
 
-     ~~~{.java}
+~~~java
      private static void sort(Comparable[] a, int lo, int hi)
      {
        if (hi <= lo) {
@@ -40,7 +41,7 @@
 
        // Missing code here!
      }
-     ~~~
+~~~
 
   3. Selection sort is always $\mathcal{O}(N^2)$. Insertion sort is
      $\mathcal{O}(N^2)$ in the worst and average cases, however
@@ -61,7 +62,7 @@
      to add extra member variables (such as a boolean array) or method
      arguments. The constructor may be extended.
 
-     ~~~{.java}
+~~~java
      private int[] edgeTo;
 
      public DepthFirstPaths(Graph g, int start) {
@@ -72,7 +73,7 @@
        for (int w: g.adjacent(v)) {
        }
      }
-     ~~~
+~~~
 
   2. What is the time complexity for (a) adding an edge, (b) checking whether
      there is an edge between two vertices, and (c) retrieving all vertices
